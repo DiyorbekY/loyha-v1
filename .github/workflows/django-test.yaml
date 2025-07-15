@@ -30,7 +30,7 @@ jobs:
       STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       DB_NAME: loyha_db
-      DB_USER: loyha_user
+      DB_USER: loyha_admin
       DB_PASSWORD: root
       DB_HOST: localhost
       DB_PORT: 5432
