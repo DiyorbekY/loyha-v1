@@ -15,7 +15,7 @@ jobs:
         image: postgres:14
         env:
           POSTGRES_DB: loyha_db
-          POSTGRES_USER: loyha_user
+          POSTGRES_USER: loyha_admin
           POSTGRES_PASSWORD: root
         ports:
           - 5432:5432
