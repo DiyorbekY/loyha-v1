@@ -5,420 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a872a89-c403-4a44-ab76-2141aaa84423" name="Changes" comment="all">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/loyha.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_auth/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docer-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profiles/Screenshot_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/schem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/fixtures/brands.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/fixtures/categories.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/frontend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/schem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/services/flash_sale.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/services/product_view_history.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/services/replenish_stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/tests/test_brand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/tests/test_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/tests/test_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/css/font-face.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/css/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-100italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-200italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-300italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-500italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-600italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-700italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-800italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-900italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/fonts/poppins/poppins-v5-latin-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/bg-title-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/bg-title-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/Untitled-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/avatar-big-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/logo-blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/logo-mini.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/images/icon/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/js/bootstrap-datetimepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/js/moment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/media/9606031aabebde32fa96edeff071a132.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/animsition/animsition.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/animsition/animsition.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/bootstrap-4.1/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/bootstrap-4.1/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/bootstrap-4.1/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/chartjs/Chart.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/circle-progress/circle-progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/circle-progress/circle-progress.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/countdown/countdowntime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/countdown/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/countdown/moment-timezone-with-data.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/countdown/moment-timezone.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/countdown/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/counter-up/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/counter-up/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/counter-up/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/font-awesome-5/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/CHANGELOG.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/CONTRIBUTING.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/fullcalendar.print.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/gcal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/gcal.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-dz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-kw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-ly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-ma.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-sa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar-tn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/be.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/bs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/de-at.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/de-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/en-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/en-gb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/en-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/en-nz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/es-do.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/es-us.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/fr-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/fr-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/kk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/lb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ms-my.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/nl-be.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/nn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sr-cyrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/zh-hk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/fullcalendar-3.10.0/locale/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/css/lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/images/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/lightbox2/src/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/perfect-scrollbar/perfect-scrollbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/progressbar/progressbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/progressbar/progressbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/config.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick-theme.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/slick/slick.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/smk-accordion/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/smk-accordion/accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/smk-accordion/accordion.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.brazil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.europe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.france.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.germany.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.russia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.sampledata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.usa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jquery.vmap.world.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/vector-map/jqvmap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/wow/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/dashboard/vendor/wow/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/brands/brands.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/categories/categories.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/checkout/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/category/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/category/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/customer_order/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/order/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/product/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/product/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/productorder/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/user/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/user/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/userbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/delivery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/return_policy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/products/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/products/product_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/wishlist/wishlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/django-test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DiyorbekY"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DiyorbekY/loyha-v1.git",
+    "accountId": "5da3cf6d-b59d-486d-8353-3d56d9364c26"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -446,59 +46,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_update.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.test_drand_create.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category.CategoryTests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category.CategoryTests.test_category_delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category.CategoryTests.test_category_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_category.CategoryTests.test_user_without_permission.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_average_rating.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_create.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_delete.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_retrieve.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_top_rated.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_update.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.CategoryTest.test_user_without_permission.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_average_rating.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_permission_granted_for_staff.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_product_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_top_rated.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/loyha/product&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.31444445&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.Dockerfile.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_brand.BrandTests.executor": "Run",
+    "Python tests.Python tests for test_brand.BrandTests.test_brand_delete.executor": "Run",
+    "Python tests.Python tests for test_brand.BrandTests.test_brand_list.executor": "Run",
+    "Python tests.Python tests for test_brand.BrandTests.test_brand_update.executor": "Run",
+    "Python tests.Python tests for test_brand.BrandTests.test_drand_create.executor": "Run",
+    "Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user.executor": "Run",
+    "Python tests.Python tests for test_category.CategoryTests.executor": "Run",
+    "Python tests.Python tests for test_category.CategoryTests.test_category_delete.executor": "Run",
+    "Python tests.Python tests for test_category.CategoryTests.test_category_list.executor": "Run",
+    "Python tests.Python tests for test_category.CategoryTests.test_user_without_permission.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_average_rating.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_create.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_delete.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_list.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_retrieve.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_top_rated.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_product_update.executor": "Run",
+    "Python tests.Python tests for test_product.CategoryTest.test_user_without_permission.executor": "Run",
+    "Python tests.Python tests for test_product.ProductViewSetTestCase.executor": "Run",
+    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_average_rating.executor": "Run",
+    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_permission_granted_for_staff.executor": "Run",
+    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_product_list.executor": "Run",
+    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_top_rated.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/loyha/product",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.splitter.proportion": "0.31444445",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\loyha\product" />
@@ -655,6 +255,15 @@
       <workItem from="1752548344969" duration="7266000" />
       <workItem from="1752557925839" duration="77000" />
     </task>
+    <task id="LOCAL-00001" summary="all">
+      <option name="closed" value="true" />
+      <created>1752559237738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752559237738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
