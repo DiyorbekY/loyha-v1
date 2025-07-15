@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.13 (loyha)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (loyha-v1)" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.12 (loyha)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (loyha)" project-jdk-type="Python SDK" />
+>>>>>>> daa10e3179ea499e8e50ff231a5ce2892023aa52
 </project>
