@@ -71,14 +71,15 @@ AUTH_USER_MODEL = 'auth.User'
 SWAGGER_USE_COMPAT_RENDERERS = False
 
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'loyha_db',
-        'USER': 'loyha_admin',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': os.getenv('DB_NAME', 'loyha_db'),
+        'USER': os.getenv('DB_USER', 'loyha_user'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'root'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
 AUTH_PASSWORD_VALIDATORS = [
