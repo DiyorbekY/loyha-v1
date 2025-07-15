@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Buyurtma berish - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="checkout-form">
+                <h3>Buyurtma ma'lumotlari</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Ism</label>
+                                <input type="text" class="form-control" name="first_name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Familiya</label>
+                                <input type="text" class="form-control" name="last_name" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Telefon raqam</label>
+                        <input type="tel" class="form-control" name="phone" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Manzil</label>
+                        <textarea class="form-control" name="address" rows="3" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-credit-card"></i> Buyurtma berish
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="order-summary">
+                <h5>Buyurtma xulosasi</h5>
+                <div class="summary-item">
+                    <span>Jami:</span>
+                    <span>0 so'm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-251.26927.90">
+    <data-source name="loyha_db@localhost" uuid="8ce3cea0-889c-43bc-8b51-47c7df89b2b5">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>loyha_user</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

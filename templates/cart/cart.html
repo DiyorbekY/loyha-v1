@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Savatcha - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4">
+                <i class="fas fa-shopping-cart"></i> Savatcha
+            </h2>
+            
+            {% if cart_items %}
+            <div class="row">
+                <!-- Cart Items -->
+                <div class="col-lg-8">
+                    <div class="cart-items">
+                        {% for item in cart_items %}
+                        <div class="cart-item" data-product-id="{{ item.product.id }}">
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-4">
+                                    <h6><a href="{% url 'product_detail' item.product.id %}">{{ item.product.name }}</a></h6>
+                                    <p class="text-muted mb-0">{{ item.product.brand.name }}</p>
+                                    {% if item.product.stock < 5 %}
+                                        <small class="text-warning">
+                                            <i class="fas fa-exclamation-triangle"></i> 
+                                            Faqat {{ item.product.stock }} dona qoldi!
+                                        </small>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="quantity-controls">
+                                        <button class="btn btn-sm btn-outline-secondary decrease-qty" data-product-id="{{ item.product.id }}">-</button>
+                                        <input type="number" class="form-control form-control-sm text-center quantity-input" 
+                                               value="{{ item.quantity }}" min="1" max="{{ item.product.stock }}" 
+                                               data-product-id="{{ item.product.id }}">
+                                        <button class="btn btn-sm btn-outline-secondary increase-qty" data-product-id="{{ item.product.id }}">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="item-price">
+                                        {% if item.product.sale_price %}
+                                            <span class="current-price">{{ item.product.sale_price|floatformat:0 }} so'm</span>
+                                            <small class="original-price d-block">{{ item.product.price|floatformat:0 }} so'm</small>
+                                        {% else %}
+                                            <span class="current-price">{{ item.product.price|floatformat:0 }} so'm</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="item-total">
+                                        <strong class="total-price">{{ item.total_price|floatformat:0 }} so'm</strong>
+                                        <button class="btn btn-sm btn-outline-danger remove-item mt-2" data-product-id="{{ item.product.id }}">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <!-- Cart Actions -->
+                    <div class="cart-actions mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="{% url 'products' %}" class="btn btn-outline-primary">
+                                    <i class="fas fa-arrow-left"></i> Xaridni davom ettirish
+                                </a>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <button class="btn btn-outline-secondary clear-cart">
+                                    <i class="fas fa-trash"></i> Savatni tozalash
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="order-summary">
+                        <h5>Buyurtma xulosasi</h5>
+                        
+                        <div class="summary-item">
+                            <span>Mahsulotlar ({{ cart_items.count }} dona):</span>
+                            <span>{{ subtotal|floatformat:0 }} so'm</span>
+                        </div>
+                        
+                        {% if discount_amount %}
+                        <div class="summary-item text-success">
+                            <span>Chegirma:</span>
+                            <span>-{{ discount_amount|floatformat:0 }} so'm</span>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="summary-item">
+                            <span>Yetkazib berish:</span>
+                            <span>
+                                {% if subtotal >= 500000 %}
+                                    <span class="text-success">Bepul</span>
+                                {% else %}
+                                    50,000 so'm
+                                {% endif %}
+                            </span>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="summary-total">
+                            <strong>
+                                <span>Jami:</span>
+                                <span>{{ total|floatformat:0 }} so'm</span>
+                            </strong>
+                        </div>
+                        
+                        <!-- Coupon Code -->
+                        <div class="coupon-section mt-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Kupon kodi" id="couponCode">
+                                <button class="btn btn-outline-secondary apply-coupon" type="button">Qo'llash</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Checkout Button -->
+                        <div class="checkout-section mt-4">
+                            <a href="{% url 'checkout' %}" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-credit-card"></i> Buyurtma berish
+                            </a>
+                            
+                            <div class="payment-methods mt-3">
+                                <small class="text-muted">Qabul qilinadigan to'lov usullari:</small>
+                                <div class="payment-icons mt-2">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <i class="fas fa-university"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Security Info -->
+                        <div class="security-info mt-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-shield-alt text-success me-2"></i>
+                                <small>Xavfsiz to'lov SSL shifrlash bilan himoyalangan</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {% else %}
+            <!-- Empty Cart -->
+            <div class="empty-cart text-center py-5">
+                <i class="fas fa-shopping-cart fa-5x text-muted mb-4"></i>
+                <h3>Savatcha bo'sh</h3>
+                <p class="text-muted mb-4">Hali hech qanday mahsulot qo'shilmagan</p>
+                <a href="{% url 'products' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-bag"></i> Xarid qilishni boshlash
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Recently Viewed Products -->
+    {% if recently_viewed %}
+    <div class="recently-viewed mt-5">
+        <h4>Yaqinda ko'rilgan mahsulotlar</h4>
+        <div class="row">
+            {% for product in recently_viewed %}
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid">
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-outline-primary add-to-wishlist" data-product-id="{{ product.id }}">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
+                        <div class="product-price">
+                            {% if product.sale_price %}
+                                <span class="current-price">{{ product.sale_price|floatformat:0 }} so'm</span>
+                                <span class="original-price">{{ product.price|floatformat:0 }} so'm</span>
+                            {% else %}
+                                <span class="current-price">{{ product.price|floatformat:0 }} so'm</span>
+                            {% endif %}
+                        </div>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-product-id="{{ product.id }}">
+                            <i class="fas fa-cart-plus"></i> Savatga
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.cart-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart-item h6 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cart-item h6 a:hover {
+    color: var(--primary-color);
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-controls .form-control {
+    width: 60px;
+}
+
+.item-price .current-price {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.item-price .original-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.item-total .total-price {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.order-summary {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.order-summary h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.summary-total span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-icons i {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.security-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.empty-cart {
+    background: white;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Quantity controls
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('increase-qty')) {
+            const input = e.target.parentNode.querySelector('.quantity-input');
+            const max = parseInt(input.getAttribute('max'));
+            const current = parseInt(input.value);
+            if (current < max) {
+                input.value = current + 1;
+                updateCartItem(input.getAttribute('data-product-id'), input.value);
+            }
+        }
+        
+        if (e.target.classList.contains('decrease-qty')) {
+            const input = e.target.parentNode.querySelector('.quantity-input');
+            const current = parseInt(input.value);
+            if (current > 1) {
+                input.value = current - 1;
+                updateCartItem(input.getAttribute('data-product-id'), input.value);
+            }
+        }
+        
+        if (e.target.classList.contains('remove-item')) {
+            const productId = e.target.getAttribute('data-product-id');
+            removeCartItem(productId);
+        }
+        
+        if (e.target.classList.contains('clear-cart')) {
+            if (confirm('Savatni tozalashni xohlaysizmi?')) {
+                clearCart();
+            }
+        }
+        
+        if (e.target.classList.contains('apply-coupon')) {
+            applyCoupon();
+        }
+    });
+    
+    // Quantity input change
+    document.addEventListener('change', function(e) {
+        if (e.target.classList.contains('quantity-input')) {
+            const productId = e.target.getAttribute('data-product-id');
+            const quantity = parseInt(e.target.value);
+            updateCartItem(productId, quantity);
+        }
+    });
+});
+
+function updateCartItem(productId, quantity) {
+    // Show loading state
+    const cartItem = document.querySelector(`[data-product-id="${productId}"]`);
+    cartItem.style.opacity = '0.7';
+    
+    // Simulate API call
+    setTimeout(() => {
+        // Update total price for this item
+        const priceElement = cartItem.querySelector('.current-price');
+        const price = parseFloat(priceElement.textContent.replace(/[^\d]/g, ''));
+        const totalElement = cartItem.querySelector('.total-price');
+        const newTotal = price * quantity;
+        totalElement.textContent = new Intl.NumberFormat('uz-UZ').format(newTotal) + ' so\'m';
+        
+        // Update order summary
+        updateOrderSummary();
+        
+        cartItem.style.opacity = '1';
+        showNotification('Savatcha yangilandi', 'success');
+    }, 500);
+}
+
+function removeCartItem(productId) {
+    const cartItem = document.querySelector(`[data-product-id="${productId}"]`);
+    cartItem.style.animation = 'fadeOut 0.5s ease-out';
+    
+    setTimeout(() => {
+        cartItem.remove();
+        updateOrderSummary();
+        showNotification('Mahsulot savatdan olib tashlandi', 'info');
+        
+        // Check if cart is empty
+        if (document.querySelectorAll('.cart-item').length === 0) {
+            location.reload();
+        }
+    }, 500);
+}
+
+function clearCart() {
+    document.querySelectorAll('.cart-item').forEach(item => {
+        item.style.animation = 'fadeOut 0.5s ease-out';
+    });
+    
+    setTimeout(() => {
+        location.reload();
+    }, 500);
+}
+
+function applyCoupon() {
+    const couponCode = document.getElementById('couponCode').value.trim();
+    const button = document.querySelector('.apply-coupon');
+    
+    if (!couponCode) {
+        showNotification('Kupon kodini kiriting', 'warning');
+        return;
+    }
+    
+    button.innerHTML = '<span class="loading-spinner"></span> Tekshirilmoqda...';
+    button.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+        // Mock coupon validation
+        const validCoupons = ['CHEGIRMA10', 'YANGI2024', 'BEPUL'];
+        
+        if (validCoupons.includes(couponCode.toUpperCase())) {
+            showNotification('Kupon muvaffaqiyatli qo\'llandi!', 'success');
+            updateOrderSummary();
+        } else {
+            showNotification('Kupon kodi noto\'g\'ri yoki muddati tugagan', 'error');
+        }
+        
+        button.innerHTML = 'Qo\'llash';
+        button.disabled = false;
+    }, 1500);
+}
+
+function updateOrderSummary() {
+    // Recalculate totals
+    let subtotal = 0;
+    document.querySelectorAll('.cart-item').forEach(item => {
+        const totalElement = item.querySelector('.total-price');
+        const total = parseFloat(totalElement.textContent.replace(/[^\d]/g, ''));
+        subtotal += total;
+    });
+    
+    // Update summary
+    const summaryItems = document.querySelectorAll('.summary-item');
+    if (summaryItems.length > 0) {
+        summaryItems[0].querySelector('span:last-child').textContent = 
+            new Intl.NumberFormat('uz-UZ').format(subtotal) + ' so\'m';
+    }
+    
+    // Update total
+    const shipping = subtotal >= 500000 ? 0 : 50000;
+    const total = subtotal + shipping;
+    
+    const totalElement = document.querySelector('.summary-total span:last-child');
+    if (totalElement) {
+        totalElement.textContent = new Intl.NumberFormat('uz-UZ').format(total) + ' so\'m';
+    }
+}
+
+// CSS animations
+const style = document.createElement('style');
+style.textContent = `
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(-100%); }
+}
+`;
+document.head.appendChild(style);
+</script>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Aloqa - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="text-center mb-5">Aloqa</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Aloqa ma'lumotlari</h5>
+                            <div class="contact-info">
+                                <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                                <p><i class="fas fa-envelope"></i> info@maishiymagazin.uz</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Toshkent, O'zbekiston</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Xabar yuborish</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Ismingiz">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Xabar"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Yuborish</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

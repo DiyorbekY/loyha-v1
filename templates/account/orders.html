@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Buyurtmalar - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Profil menyu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'profile' %}" class="text-decoration-none">Profil ma'lumotlari</a></li>
+                        <li><a href="{% url 'orders' %}" class="text-decoration-none">Buyurtmalar</a></li>
+                        <li><a href="{% url 'wishlist' %}" class="text-decoration-none">Sevimlilar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Mening buyurtmalarim</h3>
+                    
+                    {% if orders %}
+                        {% for order in orders %}
+                        <div class="order-item border-bottom py-3">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h6>Buyurtma #{{ order.id }}</h6>
+                                    <p class="text-muted">{{ order.created_at|date:"d.m.Y H:i" }}</p>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <strong>{{ order.total_amount|floatformat:0 }} so'm</strong>
+                                    <br>
+                                    <span class="badge bg-primary">{{ order.status }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-shopping-bag fa-3x text-muted mb-3"></i>
+                            <h4>Buyurtmalar mavjud emas</h4>
+                            <p>Hali hech qanday buyurtma bermagansiz</p>
+                            <a href="{% url 'products' %}" class="btn btn-primary">Xarid qilish</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

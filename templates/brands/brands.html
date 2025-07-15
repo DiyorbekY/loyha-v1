@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Brendlar - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="section-header text-center mb-5">
+        <h2>Mashhur Brendlar</h2>
+        <p>Ishonchli brendlardan mahsulotlar</p>
+    </div>
+    
+    <div class="row">
+        {% for brand in brands %}
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+            <div class="brand-card">
+                <a href="{% url 'brand_products' brand.id %}">
+                    {% if brand.logo %}
+                        <img src="{{ brand.logo.url }}" alt="{{ brand.name }}" class="img-fluid">
+                    {% else %}
+                        <h6>{{ brand.name }}</h6>
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="text-center py-5">
+                <i class="fas fa-tags fa-3x text-muted mb-3"></i>
+                <h4>Brendlar mavjud emas</h4>
+                <p>Hozircha brendlar qo'shilmagan</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

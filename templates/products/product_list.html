@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Mahsulotlar{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3">
+            <div class="filters-sidebar">
+                <h5>Filtrlar</h5>
+                
+                <!-- Categories Filter -->
+                <div class="filter-group">
+                    <h6>Kategoriyalar</h6>
+                    {% for category in categories %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="category" value="{{ category.id }}" id="cat{{ category.id }}">
+                        <label class="form-check-label" for="cat{{ category.id }}">
+                            {{ category.name }} ({{ category.product_count }})
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <!-- Price Filter -->
+                <div class="filter-group">
+                    <h6>Narx oralig'i</h6>
+                    <div class="price-range">
+                        <input type="number" class="form-control mb-2" placeholder="Dan" name="price_min">
+                        <input type="number" class="form-control" placeholder="Gacha" name="price_max">
+                    </div>
+                </div>
+                
+                <!-- Brand Filter -->
+                <div class="filter-group">
+                    <h6>Brendlar</h6>
+                    {% for brand in brands %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="brand" value="{{ brand.id }}" id="brand{{ brand.id }}">
+                        <label class="form-check-label" for="brand{{ brand.id }}">
+                            {{ brand.name }}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <!-- Rating Filter -->
+                <div class="filter-group">
+                    <h6>Reyting</h6>
+                    {% for rating in "54321" %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rating" value="{{ rating }}" id="rating{{ rating }}">
+                        <label class="form-check-label" for="rating{{ rating }}">
+                            {% for i in "12345" %}
+                                {% if forloop.counter <= rating|add:0 %}
+                                    <i class="fas fa-star text-warning"></i>
+                                {% else %}
+                                    <i class="far fa-star text-warning"></i>
+                                {% endif %}
+                            {% endfor %}
+                            va yuqori
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <button class="btn btn-primary w-100 apply-filters">Filtrlarni qo'llash</button>
+            </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="col-lg-9">
+            <!-- Sort and View Options -->
+            <div class="products-header mb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="results-info">
+                        <span>{{ products.count }} mahsulot topildi</span>
+                    </div>
+                    <div class="sort-options">
+                        <select class="form-select" name="sort">
+                            <option value="">Saralash</option>
+                            <option value="price_asc">Narx: Arzondan qimmmatga</option>
+                            <option value="price_desc">Narx: Qimmatdan arzonga</option>
+                            <option value="name_asc">Nom: A-Z</option>
+                            <option value="name_desc">Nom: Z-A</option>
+                            <option value="rating_desc">Reyting: Yuqoridan pastga</option>
+                            <option value="newest">Yangi mahsulotlar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="row products-grid">
+                {% for product in products %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid">
+                            {% if product.discount_percentage %}
+                                <div class="discount-badge">-{{ product.discount_percentage }}%</div>
+                            {% endif %}
+                            {% if product.is_new %}
+                                <div class="new-badge">Yangi</div>
+                            {% endif %}
+                            <div class="product-actions">
+                                <button class="btn btn-sm btn-outline-primary add-to-wishlist" data-product-id="{{ product.id }}">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary quick-view" data-product-id="{{ product.id }}">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h6><a href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h6>
+                            <div class="product-rating">
+                                {% for i in "12345" %}
+                                    {% if forloop.counter <= product.average_rating %}
+                                        <i class="fas fa-star text-warning"></i>
+                                    {% else %}
+                                        <i class="far fa-star text-warning"></i>
+                                    {% endif %}
+                                {% endfor %}
+                                <span class="rating-count">({{ product.review_count }})</span>
+                            </div>
+                            <div class="product-price">
+                                {% if product.sale_price %}
+                                    <span class="current-price">{{ product.sale_price|floatformat:0 }} so'm</span>
+                                    <span class="original-price">{{ product.price|floatformat:0 }} so'm</span>
+                                {% else %}
+                                    <span class="current-price">{{ product.price|floatformat:0 }} so'm</span>
+                                {% endif %}
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-product-id="{{ product.id }}">
+                                <i class="fas fa-cart-plus"></i> Savatga
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="text-center py-5">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <h4>Mahsulot topilmadi</h4>
+                        <p>Qidiruv shartlaringizni o'zgartiring yoki filtrlarni tozalang</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Pagination -->
+            {% if products.has_other_pages %}
+            <nav aria-label="Sahifalar">
+                <ul class="pagination justify-content-center">
+                    {% if products.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ products.previous_page_number }}">Oldingi</a>
+                        </li>
+                    {% endif %}
+                    
+                    {% for num in products.paginator.page_range %}
+                        {% if products.number == num %}
+                            <li class="page-item active">
+                                <span class="page-link">{{ num }}</span>
+                            </li>
+                        {% else %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if products.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ products.next_page_number }}">Keyingi</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

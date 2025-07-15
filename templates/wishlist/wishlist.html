@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sevimlilar - Maishiy Texnika Magazini{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4">
+                <i class="fas fa-heart"></i> Sevimlilar
+            </h2>
+            
+            <div class="empty-wishlist text-center py-5">
+                <i class="fas fa-heart fa-5x text-muted mb-4"></i>
+                <h3>Sevimlilar ro'yxati bo'sh</h3>
+                <p class="text-muted mb-4">Hali hech qanday mahsulot qo'shilmagan</p>
+                <a href="{% url 'products' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-bag"></i> Mahsulotlarni ko'rish
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
