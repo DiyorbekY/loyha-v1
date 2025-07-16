@@ -67,18 +67,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 AUTH_USER_MODEL = 'auth.User'
 
-# AUTH_USER_MODEL = 'custom_auth.CustomUser'
 SWAGGER_USE_COMPAT_RENDERERS = False
 
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'loyha_db',
-        'USER': 'loyha_admin',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
 AUTH_PASSWORD_VALIDATORS = [
