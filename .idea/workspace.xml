@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a872a89-c403-4a44-ab76-2141aaa84423" name="Changes" comment="tests" />
+    <list default="true" id="4a872a89-c403-4a44-ab76-2141aaa84423" name="Changes" comment="tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/tests/test_brand.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/tests/test_brand.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +113,7 @@
       <recent name="D:\loyha\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for test_brand.BrandTests">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="loyha" />
       <option name="ENV_FILES" value="" />
@@ -221,10 +225,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_brand.BrandTests" />
+        <item itemvalue="Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user" />
         <item itemvalue="Python tests.Python tests for test_brand.BrandTests.test_brand_list" />
         <item itemvalue="Python tests.Python tests for test_brand.BrandTests.test_brand_delete" />
-        <item itemvalue="Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user" />
-        <item itemvalue="Python tests.Python tests for test_brand.BrandTests" />
         <item itemvalue="Python tests.Python tests for test_brand.BrandTests.test_brand_update" />
       </list>
     </recent_temporary>
@@ -254,7 +258,7 @@
       <workItem from="1752548344969" duration="7266000" />
       <workItem from="1752557925839" duration="77000" />
       <workItem from="1752572681843" duration="1780000" />
-      <workItem from="1752669756973" duration="1733000" />
+      <workItem from="1752669756973" duration="3698000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -320,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752671307206</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tests">
+      <option name="closed" value="true" />
+      <created>1752671536189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752671536189</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,5 +356,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/loyha$.coverage" NAME=" Coverage Results" MODIFIED="1752553982011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/product/tests" />
+    <SUITE FILE_PATH="coverage/loyha_v1$.coverage" NAME=" Coverage Results" MODIFIED="1752673445797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/product/tests" />
   </component>
 </project>

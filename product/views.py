@@ -66,14 +66,14 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.all()
+    queryset = Category.objects.all().order_by('name')
     serializer_class = CategorySerializer
     swagger_schema = CategorySchema
     permission_classes = [IsAuthenticated]
 
 
 class BrandViewSet(viewsets.ModelViewSet):
-    queryset = Brand.objects.all()
+    queryset = Brand.objects.all().order_by('id')
     serializer_class = BrandSerializer
     swagger_schema = BrandSchema
     permission_classes = [IsAuthenticated]

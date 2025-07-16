@@ -2,7 +2,7 @@ import os
 import django
 from rest_framework import status
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')  # ❗ TO‘G‘RILANDI
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 django.setup()
 
 from django.urls import reverse
@@ -51,6 +51,6 @@ class BrandTests(APITestCase):
 
     def test_unauthorized_user(self):
         self.client.force_authenticate(user=None)
-        url=reverse('user-list')
+        url=reverse('brand-list')
         response=self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
