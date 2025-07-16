@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a872a89-c403-4a44-ab76-2141aaa84423" name="Changes" comment="tests" />
+    <list default="true" id="4a872a89-c403-4a44-ab76-2141aaa84423" name="Changes" comment="tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DiyorbekY"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DiyorbekY&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DiyorbekY/loyha-v1.git",
-    "accountId": "5da3cf6d-b59d-486d-8353-3d56d9364c26"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DiyorbekY/loyha-v1.git&quot;,
+    &quot;accountId&quot;: &quot;5da3cf6d-b59d-486d-8353-3d56d9364c26&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -43,59 +45,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Docker.Dockerfile.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for test_brand.BrandTests.executor": "Run",
-    "Python tests.Python tests for test_brand.BrandTests.test_brand_delete.executor": "Run",
-    "Python tests.Python tests for test_brand.BrandTests.test_brand_list.executor": "Run",
-    "Python tests.Python tests for test_brand.BrandTests.test_brand_update.executor": "Run",
-    "Python tests.Python tests for test_brand.BrandTests.test_drand_create.executor": "Run",
-    "Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user.executor": "Run",
-    "Python tests.Python tests for test_category.CategoryTests.executor": "Run",
-    "Python tests.Python tests for test_category.CategoryTests.test_category_delete.executor": "Run",
-    "Python tests.Python tests for test_category.CategoryTests.test_category_list.executor": "Run",
-    "Python tests.Python tests for test_category.CategoryTests.test_user_without_permission.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_average_rating.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_create.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_delete.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_list.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_retrieve.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_top_rated.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_product_update.executor": "Run",
-    "Python tests.Python tests for test_product.CategoryTest.test_user_without_permission.executor": "Run",
-    "Python tests.Python tests for test_product.ProductViewSetTestCase.executor": "Run",
-    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_average_rating.executor": "Run",
-    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_permission_granted_for_staff.executor": "Run",
-    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_product_list.executor": "Run",
-    "Python tests.Python tests for test_product.ProductViewSetTestCase.test_top_rated.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/loyha/product",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "settings.editor.splitter.proportion": "0.31444445",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.test_brand_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.test_drand_create.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_brand.BrandTests.test_unauthorized_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.CategoryTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.CategoryTests.test_category_delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.CategoryTests.test_category_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.CategoryTests.test_user_without_permission.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_average_rating.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_create.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_delete.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_retrieve.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_top_rated.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_product_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.CategoryTest.test_user_without_permission.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_average_rating.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_permission_granted_for_staff.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_product_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.ProductViewSetTestCase.test_top_rated.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/loyha/product&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.31444445&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
     ],
-    "DatabaseDriversLRU": [
-      "postgresql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\loyha\product" />
@@ -251,6 +255,7 @@
       <workItem from="1752494907417" duration="3995000" />
       <workItem from="1752548344969" duration="7266000" />
       <workItem from="1752557925839" duration="77000" />
+      <workItem from="1752572681843" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -300,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752562224015</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tests">
+      <option name="closed" value="true" />
+      <created>1752562342851</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752562342851</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

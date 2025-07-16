@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: loyha_db
+      POSTGRES_USER: loyha_admin
+      POSTGRES_PASSWORD: root
+
+  web:
+    build: .
+    command: >
+      bash -c "
+        python3 manage.py migrate &&
+        python3 manage.py collectstatic --no-input &&
+        python3 manage.py init_superuser &&
+        gunicorn --reload -b 0.0.0.0:8000 config.wsgi --workers 1 --timeout 300 --log-level DEBUG
+      "
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    environment:
+      DB_NAME: loyha_db
+      DB_USER: loyha_admin
+      DB_PASSWORD: root
+      DB_HOST: db
+      DB_PORT: 5432
